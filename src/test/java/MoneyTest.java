@@ -9,8 +9,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class MoneyTest {
     @Test
     public void test_equality() {
-        assertThat(new Dollar(6)).isNotEqualTo(new Franc(6));
-        assertThat(new Dollar(5)).isNotEqualTo(new Franc(6));
+        assertThat(Money.dollar(6)).isNotEqualTo(Money.franc(6));
+        assertThat(Money.dollar(5)).isNotEqualTo(Money.franc(6));
     }
 
     @Test
